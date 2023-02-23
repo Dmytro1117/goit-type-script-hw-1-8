@@ -1,4 +1,3 @@
-
 let age: number;
 age = 50;
 age = -10;
