@@ -1,3 +1,4 @@
+
 let age: number;
 age = 50;
 age = -10;
@@ -11,18 +12,22 @@ toggle = true;
 toggle = false;
 
 
+
 let empty: null;
 empty = null;
 
 let notInitialize: undefined;
 notInitialize = undefined;
 
-let callback = (a: number) => { Number };
-callback = (a) => { return 100 + a };
-console.log(callback(10));
-
 // ======================================================
 
+// Стрелочна функция:
+
+// let callback = (a: number) => { Number } ;
+// callback = (a) => { return 100 + a };
+// console.log(callback(10));
+
+// ======================================================
 
 let anything: any;
 anything = -20;
@@ -80,6 +85,7 @@ console.log(union)
 let literal: 'enable' | 'disable'
 literal = 'enable';
 console.log(literal)
+
 // =========================================
 
 // Return Type (методи для ф.):
@@ -123,7 +129,6 @@ const page1: PageBase = {
   }
 }
 
-
 const page2: PageBase = {
   title: 'Python or Js',
   likes: 5,
@@ -133,6 +138,7 @@ const page2: PageBase = {
 
 console.log(page1)
 console.log(page2)
+
 // ===========================
 
 let arrObj: { name: string, ale?: string }[];
