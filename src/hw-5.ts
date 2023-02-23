@@ -59,7 +59,6 @@ console.log(merged);
 
 class Component<T> {
   constructor (public props:T) {
-
   }
 }
 
