@@ -1,7 +1,7 @@
 "use strict";
 function getPromise() {
     return new Promise((resolve) => {
-        resolve(['Text', 50]);
+        resolve(['Text', 80]);
     });
 }
 getPromise()
@@ -16,6 +16,14 @@ function compare(top, bottom) {
         weight: bottom.weight,
     };
 }
+const res = compare({
+    "name": "Jon",
+    "color": "green"
+}, {
+    "position": 10,
+    "weight": 70
+});
+console.log(res);
 function merge(objA, objB) {
     return Object.assign(objA, objB);
 }
@@ -34,5 +42,9 @@ class Page extends Component {
     }
 }
 const compo = new Component("Awesome!");
+const page = new Page({ title: "Robin Hood" });
+const page2 = new Page({ title: "Robin Wood" });
+page.pageInfo();
+page2.pageInfo();
 console.log(compo.props);
 //# sourceMappingURL=hw-5.js.map
