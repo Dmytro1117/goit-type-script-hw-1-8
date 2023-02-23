@@ -42,9 +42,17 @@ class Page extends Component {
     }
 }
 const compo = new Component("Awesome!");
-const page = new Page({ title: "Robin Hood" });
-const page2 = new Page({ title: "Robin Wood" });
-page.pageInfo();
-page2.pageInfo();
+const compo2 = new Component(40);
+const page = new Page({ title: "Robin Hood", name: "Robin", age: 30 });
+const page2 = new Page({ title: "William Wood", name: "William", age: 45 });
+console.log(compo);
 console.log(compo.props);
+console.log(compo2);
+console.log(compo2.props);
+console.log(page);
+console.log(page.props.title);
+page.pageInfo();
+console.log(page2);
+console.log(page2.props.title);
+page2.pageInfo();
 //# sourceMappingURL=hw-5.js.map
