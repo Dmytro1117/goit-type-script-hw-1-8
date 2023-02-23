@@ -1,14 +1,14 @@
 // Є функція, яка повертає Promise, він повертає масив рядків і чисел, опишіть правильно тип.
 
 function getPromise (): Promise<Array<string | number>> {
-  return new Promise((resolve) => {
-    resolve(['Text', 50]);
+   return  new Promise((resolve) => {
+    resolve(['Text', 80]);
   });
 }
 
 
 getPromise ()
-.then((data) => {
+.then((data) =>  {
   console.log(data);
 });
 
@@ -32,6 +32,16 @@ function compare (top: Pick<AllType, 'name' | 'color'>, bottom: Pick<AllType, 'p
   }
 }
 
+const res = compare({
+  "name": "Jon",
+  "color": "green"
+}, {
+  "position": 10,
+  "weight": 70
+})
+
+console.log(res);
+
 // Вкажіть дженерики для функції об'єднання об'єктів.
 
 function merge <T extends object, U extends object>(objA: T, objB: U) {
@@ -43,6 +53,8 @@ merged.name;
 
 console.log(merged.name);
 console.log(merged);
+
+
 // У вас є наступні класи
 
 class Component<T> {
@@ -62,7 +74,10 @@ class Page extends Component<IPerson>  {
 }
 
 const compo = new Component("Awesome!")
-
+const page = new Page({ title: "Robin Hood" })
+const page2 = new Page({ title: "Robin Wood" })
+page.pageInfo()
+page2.pageInfo()
 console.log(compo.props);
 
 
